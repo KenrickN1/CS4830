@@ -1,4 +1,4 @@
-!DOCTYPE HTML
+<!DOCTYPE html>
 <html>
 <head>
     <title>Kenrick's Exploration #1</title>
