@@ -1,0 +1,21 @@
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\ApplicationInsights.config
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Teams Service.dll.config
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Teams Service.dll
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Teams Service.pdb
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\EntityFramework.dll
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.AI.Web.dll
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\EntityFramework.xml
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.AI.Web.xml
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\obj\Debug\TeamsService.csprojResolveAssemblyReference.cache
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\obj\Debug\Teams Service.dll
+C:\Users\Kenrick Niedbalski\Documents\CS4830\Hackweek\Teams Service\Teams Service\obj\Debug\Teams Service.pdb
