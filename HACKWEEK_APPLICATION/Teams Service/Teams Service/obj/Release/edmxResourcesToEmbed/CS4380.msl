@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CS4380ModelStoreContainer" CdmEntityContainer="CS4380Entities1">
+    <EntitySetMapping Name="Emails">
+      <EntityTypeMapping TypeName="CS4380Model.Email">
+        <MappingFragment StoreEntitySet="Email">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Email1" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Phones">
+      <EntityTypeMapping TypeName="CS4380Model.Phone">
+        <MappingFragment StoreEntitySet="Phone">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teams">
+      <EntityTypeMapping TypeName="CS4380Model.Team">
+        <MappingFragment StoreEntitySet="Teams">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TeamName" ColumnName="TeamName" />
+          <ScalarProperty Name="StadiumName" ColumnName="StadiumName" />
+          <ScalarProperty Name="Capacity" ColumnName="Capacity" />
+          <ScalarProperty Name="City" ColumnName="City" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

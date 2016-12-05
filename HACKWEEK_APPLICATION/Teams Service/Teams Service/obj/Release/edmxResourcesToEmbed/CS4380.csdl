@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CS4380Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Email">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="Email1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Team" Relationship="Self.FK_Email_Teams" FromRole="Email" ToRole="Teams" />
+  </EntityType>
+  <EntityType Name="Phone">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Team" Relationship="Self.FK_Phone_Teams" FromRole="Phone" ToRole="Teams" />
+  </EntityType>
+  <EntityType Name="Team">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="TeamName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StadiumName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Capacity" Type="Int32" />
+    <Property Name="City" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Email" Relationship="Self.FK_Email_Teams" FromRole="Teams" ToRole="Email" />
+    <NavigationProperty Name="Phone" Relationship="Self.FK_Phone_Teams" FromRole="Teams" ToRole="Phone" />
+  </EntityType>
+  <Association Name="FK_Email_Teams">
+    <End Role="Teams" Type="Self.Team" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Email" Type="Self.Email" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Email">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Phone_Teams">
+    <End Role="Teams" Type="Self.Team" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Phone" Type="Self.Phone" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Teams">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Phone">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="CS4380Entities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Emails" EntityType="Self.Email" />
+    <EntitySet Name="Phones" EntityType="Self.Phone" />
+    <EntitySet Name="Teams" EntityType="Self.Team" />
+    <AssociationSet Name="FK_Email_Teams" Association="Self.FK_Email_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="Email" EntitySet="Emails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Phone_Teams" Association="Self.FK_Phone_Teams">
+      <End Role="Teams" EntitySet="Teams" />
+      <End Role="Phone" EntitySet="Phones" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
